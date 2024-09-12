@@ -44,14 +44,19 @@ a {
     position: relative;
     background-color: #fff;
 }
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--border-radius);
+}
 .cover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     background-color: #2a373f;
-    border-radius: var(--border-radius);
 }
 .cover .logo {
     filter: brightness(0) invert(1);
@@ -62,9 +67,6 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 24px;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--border-radius);
 }
 .info .logo {
     width: 150px;
@@ -110,13 +112,6 @@ a {
 .animation-2d .person-card {
     --animation-time: .25s;
 }
-.animation-2d .front-side,
-.animation-2d .back-side {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 .animation-2d .person-card .front-side {
     animation: var(--animation-time) open-card var(--animation-time) linear both;
 }
@@ -132,18 +127,18 @@ a {
 }
 @keyframes open-card {
     0% {
-        transform: translate(-50%, -50%) scaleX(0);
+        transform: scaleX(0);
     }
     100% {
-        transform: translate(-50%, -50%) scaleX(1);
+        transform: scaleX(1);
     }
 }
 @keyframes close-card {
     0% {
-        transform: translate(-50%, -50%) scaleX(1);
+        transform: scaleX(1);
     }
     100% {
-        transform: translate(-50%, -50%) scaleX(0);
+        transform: scaleX(0);
     }
 }
 
@@ -155,9 +150,6 @@ a {
 }
 .animation-3d .person-card .front-side,
 .animation-3d .person-card .back-side {
-    position: absolute;
-    top: 0;
-    left: 0;
     backface-visibility: hidden;
 }
 .animation-3d .person-card .front-side {
