@@ -115,17 +115,17 @@ a {
     transform: translate(-50%, -50%);
 }
 .animation-2d .person-card .front-side {
-    animation: var(--animation-time) open-card var(--animation-time) both linear;
+    animation: var(--animation-time) open-card var(--animation-time) linear both;
 }
 .animation-2d .person-card .back-side {
-    animation: close-card var(--animation-time) forwards linear;
+    animation: close-card var(--animation-time) linear forwards;
 }
 /* Hover */
 .animation-2d .person-card:hover .front-side {
-    animation: close-card var(--animation-time) forwards linear;
+    animation: close-card var(--animation-time) linear forwards;
 }
 .animation-2d .person-card:hover .back-side {
-    animation: var(--animation-time) open-card var(--animation-time) both linear;
+    animation: var(--animation-time) open-card var(--animation-time) linear both;
 }
 @keyframes open-card {
     0% {
@@ -158,17 +158,17 @@ a {
     backface-visibility: hidden;
 }
 .animation-3d .person-card .front-side {
-    animation: rotate-to-front var(--animation-time) forwards linear;
+    animation: rotate-to-front var(--animation-time) linear forwards;
 }
 .animation-3d .person-card .back-side {
-    animation: rotate-to-back var(--animation-time) forwards linear;
+    animation: rotate-to-back var(--animation-time) linear forwards;
 }
 /* Hover */
 .animation-3d .person-card:hover .front-side {
-    animation: rotate-to-back var(--animation-time) forwards linear;
+    animation: rotate-to-back var(--animation-time) linear forwards;
 }
 .animation-3d .person-card:hover .back-side {
-    animation: rotate-to-front var(--animation-time) forwards linear;
+    animation: rotate-to-front var(--animation-time) linear forwards;
 }
 @keyframes rotate-to-front {
     0% {
