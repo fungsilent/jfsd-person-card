@@ -181,3 +181,28 @@ a {
         transform: rotateY(180deg);
     }
 }
+
+/*
+ * Transition-3d
+*/
+.transition-3d .person-card {
+    --animation-time: .9s;
+}
+.transition-3d .person-card .front-side,
+.transition-3d .person-card .back-side {
+    backface-visibility: hidden;
+    transition: var(--animation-time);
+}
+.transition-3d .person-card .front-side {
+    transform: rotateY(0deg);
+}
+.transition-3d .person-card .back-side {
+    transform: rotateY(180deg);
+}
+/* Hover */
+.transition-3d .person-card:hover .front-side {
+    transform: rotateY(180deg);
+}
+.transition-3d .person-card:hover .back-side {
+    transform: rotateY(0deg);
+}
