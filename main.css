@@ -115,9 +115,6 @@ a {
 .animation-2d .person-card {
     --animation-time: .25s;
 }
-.animation-2d .person-card .card {
-    perspective: 400px;
-}
 .animation-2d .person-card .front-side {
     animation: var(--animation-time) open-card var(--animation-time) linear both;
 }
