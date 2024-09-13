@@ -186,12 +186,12 @@ a {
  * Transition-3d
 */
 .transition-3d .person-card {
-    --animation-time: .9s;
+    --animation-time: .6s;
 }
 .transition-3d .person-card .front-side,
 .transition-3d .person-card .back-side {
     backface-visibility: hidden;
-    transition: var(--animation-time);
+    transition: var(--animation-time) linear;
 }
 .transition-3d .person-card .front-side {
     transform: rotateY(0deg);
