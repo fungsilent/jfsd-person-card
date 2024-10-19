@@ -113,7 +113,7 @@ a {
  * Animation-2d
 */
 .animation-2d .person-card {
-    --animation-time: 10s;
+    --animation-time: .3s;
 }
 .animation-2d .person-card .front-side {
     animation: var(--animation-time) open-card var(--animation-time) linear both;
@@ -149,7 +149,7 @@ a {
  * Animation-3d
 */
 .animation-3d .person-card {
-    --animation-time: 10s;
+    --animation-time: .6s;
 }
 .animation-3d .person-card .front-side,
 .animation-3d .person-card .back-side {
